@@ -1,8 +1,10 @@
 <h3 class="border-bottom border-1"><%= @task.title %>
+<%= @task.completed ? " - complete" : " - incomplete" %>
 <%= link_to edit_task_path do %>
   <i class="fas fa-edit"></i>
 <% end %>
 <%= link_to task_path(@task), method: :delete, data: { confirm: "Are you sure?" } do %>
   <i class="fas fa-trash-alt"></i>
-<% end %></h3>
+<% end %>
+</h3>
 <p><%= @task.details %></p>
