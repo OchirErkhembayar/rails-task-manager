@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar border-bottom border-4 d-flex align-items-center">
+      <div class="container">
+        <h3><%= link_to 'Task Manager', tasks_path %></h3>
+        <p class="btn btn-secondary white-text"><%= link_to "create task", new_task_path %></p>
+      </div>
+    </div>
+    <div class="container main-body">
+      <%= yield %>
+    </div>
   </body>
 </html>

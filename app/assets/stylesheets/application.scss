@@ -1,0 +1,56 @@
+@import "bootstrap/scss/bootstrap";
+
+.main-body {
+  width: 700px;
+  margin: 30px auto;
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+
+a:hover {
+  color: white;
+}
+
+h3 a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+
+h3 a:hover {
+  color: black;
+  opacity: 1;
+}
+
+h5 a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+
+h5 a:hover {
+  color: black;
+  opacity: 1;
+}
+
+.white-text {
+  color: white;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container p {
+  align-items: center;
+  margin: 10px;
+}
+
+.container h3 {
+  align-items: center;
+  margin: 10px;
+}
